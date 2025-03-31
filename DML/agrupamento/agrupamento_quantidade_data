@@ -1,0 +1,8 @@
+/*
+	Mostre a quantidade de pedidos
+	realizados em cada mês.
+*/
+
+SELECT COUNT(id_pedido) AS total_pedidos , data_pedido
+FROM pedidos
+GROUP BY data_pedido

@@ -1,0 +1,6 @@
+/*
+	Quantos pedidos foram feitos no total?
+*/
+
+SELECT COUNT(id_pedido) AS total_pedidos
+FROM pedidos

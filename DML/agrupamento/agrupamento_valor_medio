@@ -1,0 +1,7 @@
+/*
+	Qual o valor médio dos pedidos?
+*/
+
+SELECT SUM(pedidos.total) / COUNT(pedidos.id_pedido) 
+AS valor_medio_pedidos
+FROM pedidos

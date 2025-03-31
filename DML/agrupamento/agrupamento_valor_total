@@ -1,0 +1,10 @@
+/*
+	Liste os clientes que gastaram 
+	mais de 300 reais no total.
+*/
+
+SELECT clientes.nome, SUM(pedidos.total) AS total_pedidos
+FROM clientes
+INNER JOIN pedidos ON clientes.id_cliente = pedidos.fk_id_cliente
+GROUP BY clientes.nome
+HAVING SUM(pedidos.total) > 300;

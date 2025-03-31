@@ -1,0 +1,9 @@
+/*
+	Qual o maior e o menor valor
+	de pedido registrado?
+*/
+
+SELECT MAX(pedidos.total) AS maior_Valor ,
+MIN(pedidos.total) AS menor_valor
+FROM pedidos 
+
