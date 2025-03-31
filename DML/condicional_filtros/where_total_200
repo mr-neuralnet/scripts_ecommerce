@@ -1,0 +1,7 @@
+/*
+	Encontre todos os pedidos cujo 
+	total seja maior que 200.
+*/
+
+SELECT * FROM pedidos
+Where total > 200 

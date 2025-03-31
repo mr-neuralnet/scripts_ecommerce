@@ -1,0 +1,8 @@
+/*
+	Liste todos os pedidos feitos, 
+	exibindo o ID do pedido, o ID 
+	do cliente, a data e o total.
+*/
+
+SELECT id_pedido , fk_id_cliente , data_pedido , total 
+FROM pedidos

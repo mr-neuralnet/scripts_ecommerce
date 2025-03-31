@@ -1,0 +1,9 @@
+/*
+	Recupere os pedidos feitos entre 1º de março
+	e 15 de março de 2024.
+*/
+
+-- Nota : utilizar o BETWEEN 
+
+SELECT * FROM pedidos 
+WHERE data_pedido BETWEEN '2024-03-01' AND '2024-03-14';

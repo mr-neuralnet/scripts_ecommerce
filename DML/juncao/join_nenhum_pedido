@@ -1,0 +1,9 @@
+/*
+	Recupere os clientes que
+	ainda não realizaram nenhum pedido.
+*/
+
+SELECT clientes.nome FROM clientes
+INNER JOIN pedidos ON clientes.id_cliente = pedidos.fk_id_cliente
+GROUP BY clientes.nome
+HAVING COUNT(pedidos.id_pedido) = 0;

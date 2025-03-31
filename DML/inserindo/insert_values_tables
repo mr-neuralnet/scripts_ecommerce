@@ -1,0 +1,24 @@
+/*
+	Script DML - Inserindo dados na tabela
+*/
+
+-- Inserindo dados na tabela clientes
+INSERT INTO clientes (id_cliente,nome, email) VALUES
+(1,'João Silva', 'joao.silva@email.com'),
+(2,'Maria Oliveira', 'maria.oliveira@email.com'),
+(3,'Carlos Santos', 'carlos.santos@email.com'),
+(4,'Ana Souza', 'ana.souza@email.com'),
+(5,'Pedro Rocha', 'pedro.rocha@email.com');
+
+-- Inserindo dados na tabela pedidos
+INSERT INTO pedidos (fk_id_cliente, data_pedido, total) VALUES
+(1, '2024-03-01', 150.00),
+(1, '2024-03-05', 200.00),
+(2, '2024-03-10', 99.90),
+(3, '2024-03-15', 350.50),
+(4, '2024-03-20', 220.75),
+(5, '2024-03-25', 180.30),
+(2, '2024-04-01', 120.00),
+(3, '2024-04-05', 450.00),
+(1, '2024-04-10', 75.50),
+(5, '2024-04-15', 90.00);

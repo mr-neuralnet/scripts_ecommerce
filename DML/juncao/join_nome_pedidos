@@ -1,0 +1,8 @@
+/*
+	Exiba os pedidos junto com os 
+	nomes dos clientes que os realizaram
+*/
+
+SELECT pedidos.*, clientes.nome
+FROM pedidos
+INNER JOIN clientes ON pedidos.fk_id_cliente = clientes.id_cliente;

@@ -1,0 +1,8 @@
+/*
+	Mostre os pedidos mais recentes primeiro.
+*/
+
+-- Nota : Utilizar DESC(pode usar ASC)
+
+SELECT * FROM pedidos
+ORDER BY data_pedido DESC

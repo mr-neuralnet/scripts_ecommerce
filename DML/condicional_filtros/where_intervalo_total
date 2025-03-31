@@ -1,0 +1,9 @@
+/*
+	Mostre os pedidos cujo total 
+	seja entre 100 e 300 reais.
+*/
+
+-- Nota : Utilizar BETWEEN
+
+SELECT * FROM pedidos
+WHERE total BETWEEN 100 AND 300

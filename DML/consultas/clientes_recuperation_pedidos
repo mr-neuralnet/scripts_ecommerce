@@ -1,0 +1,7 @@
+/*
+	Recupere o nome e e-mail dos clientes 
+	que já realizaram pelo menos um pedido.
+*/
+
+SELECT email , id_cliente
+FROM clientes 

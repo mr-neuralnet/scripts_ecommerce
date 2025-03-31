@@ -1,0 +1,9 @@
+/*
+	Liste os clientes que possuem
+	e-mails que terminam com "@email.com"
+*/
+
+-- Nota : Utilizar LIKE e % 
+
+SELECT * FROM clientes
+WHERE email LIKE '%email.com'

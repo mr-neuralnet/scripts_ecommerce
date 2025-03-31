@@ -1,0 +1,8 @@
+/*
+	Exiba os clientes em ordem alfabética.
+*/
+
+-- Agrupados por ordem alfabética 
+
+SELECT * FROM  clientes
+ORDER BY nome

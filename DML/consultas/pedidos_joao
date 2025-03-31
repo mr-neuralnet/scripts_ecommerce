@@ -1,0 +1,7 @@
+/*
+	Mostre os detalhes dos pedidos feitos
+	pelo cliente chamado "João Silva".
+*/
+SELECT id_pedido , data_pedido , total 
+FROM pedidos
+Where fk_id_cliente = 1

@@ -1,0 +1,9 @@
+/*
+	Mostre o total gasto por
+	cada cliente em pedidos.
+*/
+
+ SELECT clientes.nome , COUNT(pedidos.id_pedido) AS total_pedidos , SUM(pedidos.total) AS total_Valor
+ FROM clientes
+ INNER JOIN pedidos ON clientes.id_cliente = pedidos.fk_id_cliente
+ GROUP BY clientes.nome

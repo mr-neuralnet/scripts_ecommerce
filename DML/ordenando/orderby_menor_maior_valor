@@ -1,0 +1,7 @@
+/*
+	Liste os pedidos ordenados do maior
+	para o menor valor total.
+*/
+
+SELECT * FROM  pedidos
+ORDER BY total

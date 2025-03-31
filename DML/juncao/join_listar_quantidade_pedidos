@@ -1,0 +1,14 @@
+/*
+	Liste os clientes e a quantidade 
+	de pedidos que cada um fez.
+*/
+
+/*
+	Deve utilizar o COUNT em id_pedidos
+	além de utilizar GROYP BY
+*/
+
+SELECT clientes.nome, COUNT(pedidos.id_pedido) AS quantidade_pedidos
+FROM clientes
+INNER JOIN pedidos ON clientes.id_cliente = pedidos.fk_id_cliente
+GROUP BY clientes.id_cliente;
